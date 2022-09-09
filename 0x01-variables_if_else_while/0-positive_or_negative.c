@@ -1,25 +1,26 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 
 /**
- * main - print all possible combinations of single digits numbers
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
 
-int main(void)
+int (main)void
 {
-		int number;
+	int n;
 
-		for (number = 0; number <= 9; number++)
-		{
-		putchar(number + '0');
-		if (number < 9)
-		{
-		putchar(',');
-		putchar(' ');
-		}
-		}
-		putchar('\n');
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
 
-		return (0);
-}
+	if (n ==0)
+		printf("%d is zero\n", n;
+	else if (n < 0)
+		printf("d is negative\n", n);
+	else
+		printf("d is positive\n", n);
+
+	return (0);
+}	
