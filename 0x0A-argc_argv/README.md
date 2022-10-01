@@ -1,0 +1,1 @@
+Argument count(argc) and Arugument vector(argv) in C
